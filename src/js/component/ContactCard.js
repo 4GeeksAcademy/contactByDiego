@@ -7,7 +7,7 @@ export const ContactCard = ({ contact }) => {
   const { actions } = useContext(Context);
 
   const handleDelete = () => {
-    if (window.confirm("Está seguro de querer borrar este usuario?")) {
+    if (window.confirm("Está seguro de querer borrar este contacto?")) {
       actions.deleteContacts(contact.id);
     }
   };
