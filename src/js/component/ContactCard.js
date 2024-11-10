@@ -49,7 +49,17 @@ export const ContactCard = ({ contact }) => {
         <div className="row mt-3">
           <div className="col-md-6">
             <Link to={`/EditContact/${contact.id}`}>
-              <button className="btn btn-primary icon-button">
+              <button className="btn btn-primary icon-button"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="editar"
+                        onMouseOver={(e) => {
+                        e.target.setAttribute("title", "Editar");
+                        }}
+                        onMouseOut={(e) => {
+                        e.target.removeAttribute("title");
+                        }}
+                      >
                 <i className="far fa-edit" />
               </button>
             </Link>
@@ -58,6 +68,12 @@ export const ContactCard = ({ contact }) => {
             <button
               className="btn btn-danger icon-button"
               onClick={handleDelete}
+              onMouseOver={(e) => {
+                e.target.setAttribute("title", "Eliminar");
+              }}
+              onMouseOut={(e) => {
+                e.target.removeAttribute("title");
+              }}
             >
               <i className="fas fa-trash-alt" />
             </button>
