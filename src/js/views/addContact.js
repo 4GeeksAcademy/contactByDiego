@@ -34,7 +34,7 @@ export const AddContact = () => {
     <div className="contact-card-container mt-0">
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
-          <label>Full Name</label>
+          <label>Nombre Completo:</label>
           <input
             type="text"
             name="name"
@@ -45,7 +45,7 @@ export const AddContact = () => {
           />
         </div>
         <div className="form-group">
-          <label>Email</label>
+          <label>E-mail:</label>
           <input
             type="email"
             name="email"
@@ -56,7 +56,7 @@ export const AddContact = () => {
           />
         </div>
         <div className="form-group">
-          <label>Address</label>
+          <label>Dirección:</label>
           <input
             type="text"
             name="address"
@@ -67,7 +67,7 @@ export const AddContact = () => {
           />
         </div>
         <div className="form-group">
-          <label>Phone</label>
+          <label>Teléfono:</label>
           <input
             type="tel"
             name="phone"
@@ -80,7 +80,7 @@ export const AddContact = () => {
 
         {/* Si el contacto no existe , añadir contacto y al reves*/}
         <button type="submit">
-          {contactData.id ? "Update Contact" : "Add Contact"}
+          {contactData.id ? "Actualizar Contacto" : "Añadir contacto"}
         </button>
       </form>
     </div>

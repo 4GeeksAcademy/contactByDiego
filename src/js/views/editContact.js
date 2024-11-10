@@ -89,11 +89,11 @@ export const EditContact = () => {
         </div>
         <div className="btn-group d-flex justify-content-between">
           <Link to={"/"}>
-            <button>Back</button>
+            <button>Volver</button>
           </Link>
           <button type="submit">
             
-            {contact.id ? "Update Contact" : "Add Contact"}
+            {contact.id ? "Actualizar" : "Añadir Contacto"}
           </button>
         </div>
       </form>

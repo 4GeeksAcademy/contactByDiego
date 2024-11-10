@@ -66,16 +66,9 @@ body {
   /* Card */
   
   .contact-card-border {
-    border: 2px solid transparent;
-    border-radius: 10px;
-    border-image: radial-gradient(
-      ellipse at center,
-      #272725 0%,
-      #568655 20%,
-      #23a717 50%,
-      #198119 80%,
-      transparent 110%
-    );
+    border: 10px solid transparent;
+    border-radius: 50px;
+    border-width: 10px;
     border-image-slice: 1;
     box-shadow: 0 4px 8px rgba(39, 39, 39, 0.15),
       0 6px 20px rgba(39, 39, 39, 0.25);
@@ -105,10 +98,10 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border-top: 2px solid #fafaf9;
-    border-right: 2px solid#fffefd;
-    border-left: 2px solid #28549f;
-    border-bottom: 2px solid #28549f;
+    border-top: 4px solid #015516;
+    border-right: 4px solid#029b23;
+    border-left: 4px solid #029b23;
+    border-bottom: 4px solid #015516;
     padding: 0px;
     animation: spin 10s infinite linear;
   }
@@ -147,14 +140,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgb(203, 238, 209);
     margin-top: 20px;
-    border-image: radial-gradient(
-      ellipse at center,
-      #272725 0%,
-      #568655 20%,
-      #23a717 50%,
-      #198119 80%,
-      transparent 110%
-    );
     border-image-slice: 1;
     border-radius: 10px;
     margin-bottom: 20px;

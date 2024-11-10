@@ -19,7 +19,7 @@ export const ContactCard = ({ contact }) => {
           <div className="image-circle">
             <div className="profile-icon-container">
               <img
-                src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/unknown-512.png"
+                src="https://cdn4.iconfinder.com/data/icons/web-ui-color/128/Account-512.png"
                 alt="profile-icon"
                 width="100"
                 className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
